@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    font-size: 32px;
+    background-color: #ccc;
+    border-bottom: 1px solid aqua;
+    margin-bottom: 56px;
+}
+
+.store{
+    margin-bottom: 120px;
+}
+
+.store .noticia a {
+    display: flex;
+    font-size: 1.25em;
+}
+
+.store .noticia img{
+    margin-right: 8px;
+}
+
+section h2{
+    margin: 32px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    row-gap: 5%;
+}
+
+@media screen and(max-width:767px){
+    .container{
+        max-width: 90%;
+    }
+
+    .store .noticia a {
+        display: block;
+        font-size: 1.25em;
+    }
+
+    .produtos{
+        display: block;
+
+}
+}
