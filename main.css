@@ -57,10 +57,9 @@ section h2{
     height: 320px;
 }
 
-@media screen and(max-width:767px){
+@media screen and (max-width:767px){
     .container{
         max-width: 90%;
-        display: block;
     }
 
     .store .noticia a {
@@ -68,7 +67,34 @@ section h2{
         font-size: 1em;
     }
 
-    .produtos .container{
+    .conteudo.container{
+        display:grid;
+        grid-template-columns:repeat(1,100%);
+    }
+
+    .produtos.container{
         display: block;
     }
+
+    .noticia{
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .store .noticia a {
+        display: block;
+        font-size: 1em;
+    }
+
+    .produtos.container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+
 }
